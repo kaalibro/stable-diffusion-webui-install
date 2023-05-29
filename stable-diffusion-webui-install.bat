@@ -23,23 +23,23 @@ where python >nul 2>nul || (
   exit /b 1
 )
 
-echo [93mÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»[0m
-echo [93mº                          === READ FIRST: ===                          º[0m
-echo [93mº[0m [96mCLEAN INSTALL:[0m[93m                                                        º[0m
-echo [93mº Run this script from the directory where Stable Diffusion web UI      º[0m
-echo [93mº should be located after installation.                                 º[0m
-echo [93mº                                                                       º[0m
-echo [93mº[0m [96mREINSTALLATION:[0m[93m                                                       º[0m
-echo [93mº Place this script in the same directory as your current installation  º[0m
-echo [93mº (not in the directory itself, but next to it) and specify the name of º[0m
-echo [93mº the directory where you want to reinstall Stable Diffusion web UI.    º[0m
-echo [93mÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼[0m
+echo [93mâ•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—[0m
+echo [93mâ•‘                          === READ FIRST: ===                          â•‘[0m
+echo [93mâ•‘[0m [96mCLEAN INSTALL:[0m[93m                                                        â•‘[0m
+echo [93mâ•‘ Run this script from the directory where Stable Diffusion web UI      â•‘[0m
+echo [93mâ•‘ should be located after installation.                                 â•‘[0m
+echo [93mâ•‘                                                                       â•‘[0m
+echo [93mâ•‘[0m [96mREINSTALLATION:[0m[93m                                                       â•‘[0m
+echo [93mâ•‘ Place this script in the same directory as your current installation  â•‘[0m
+echo [93mâ•‘ (not in the directory itself, but next to it) and specify the name of â•‘[0m
+echo [93mâ•‘ the directory where you want to reinstall Stable Diffusion web UI.    â•‘[0m
+echo [93mâ•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•[0m
 echo.
 
 @REM Specify a folder name
 echo Specify a folder name where Stable Diffusion web UI will be (re)installed
 echo or leave it blank to use the default [96mstable-diffusion-webui[0m name:
-set /p INSTALL_DIR=^>ÿ
+set /p INSTALL_DIR=^>Â 
 echo.
 
 if "%INSTALL_DIR%"=="" (
@@ -55,16 +55,16 @@ if errorlevel==2 (
 @REM Check if the specified Stable Diffusion web UI folder exist
 if exist !INSTALL_DIR! (
   echo [91m
-  echo ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
-  echo º                                                                       º
-  echo º                           ^^!^^!^^! WARNING ^^!^^!^^!                             º
-  echo º                                                                       º
-  echo º      This script will delete the current Stable Diffusion web UI      º
-  echo º                installation in the specified folder^^!                  º
-  echo º                                                                       º
-  echo º              MAKE SURE YOU MAKE THE NECESSARY BACKUPS^^!                º
-  echo º                                                                       º
-  echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼[0m
+  echo â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+  echo â•‘                                                                       â•‘
+  echo â•‘                           ^^!^^!^^! WARNING ^^!^^!^^!                             â•‘
+  echo â•‘                                                                       â•‘
+  echo â•‘      This script will delete the current Stable Diffusion web UI      â•‘
+  echo â•‘                installation in the specified folder^^!                  â•‘
+  echo â•‘                                                                       â•‘
+  echo â•‘              MAKE SURE YOU MAKE THE NECESSARY BACKUPS^^!                â•‘
+  echo â•‘                                                                       â•‘
+  echo â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•[0m
   echo.
 
   timeout /t 3 > nul
@@ -206,7 +206,7 @@ if not exist %MODEL_PATH% (
 
 set "MODEL_PATH="
 echo Full path to [96mv1-5-pruned-emaonly.safetensors[0m directory (if any):
-set /p MODEL_PATH=^>ÿ
+set /p MODEL_PATH=^>Â 
 echo.
 
 if "%MODEL_PATH%"=="" (
